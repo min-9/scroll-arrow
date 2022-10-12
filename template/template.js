@@ -21,7 +21,7 @@ export const template = `
       border-right: 5px solid var(--color);
       margin: -10px;
       // transform: rotate(var(--rotate));
-      // animation: scroll 1.8s infinite;
+      animation: scroll 1.8s infinite;
     }
 
     .arrow > span:nth-child(2) {
