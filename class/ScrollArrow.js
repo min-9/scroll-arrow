@@ -33,9 +33,11 @@ export class ScrollArrow extends HTMLElement {
     arrowTemplate.innerHTML = template;
 
     const [_1, arrow] = arrowTemplate.content.children;
-
-    arrow.style.cssText = `--color:${this.color};`;
-
+    
+    if (this.color) {
+      arrow.style.cssText = `--color:${this.color};`;
+    }
+    
     switch (this.direction) {
       case 'up':
         arrow.style.cssText += `--rotate:180deg`;
